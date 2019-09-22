@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>官网的球</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link rel="stylesheet" href="../css/base.css">
+    </head>
+    <body>
+       <div id="container"></div>
+    </body>
+</html>
+<script type="text/javascript" src="../js/global.js"></script>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/konva.min.js"></script>
+<script type="text/javascript">
+      var mykonva=new mykonva({
+          stage_container:"container",
+      });
+
+      var center_group=mykonva.create_group();
+      var center_group1=mykonva.create_group();
+      var center_group2=mykonva.create_group();
+
+      var c5=mykonva.create_circle({
+        radius:520/2,
+        stroke:"#E0E4EE",
+        dash:[4,4],
+        circle_father:center_group,
+    })
+      var c4=mykonva.create_circle({
+        radius:327/2,
+        stroke:"#E0E4EE",
+        dash:[4,4],
+        circle_father:center_group,
+    })
+
+      var c3=mykonva.create_circle({
+        radius:302/2,
+        stroke:"#2A3466",
+        dash:[8,4],
+        circle_father:center_group,
+    })
+
+      var c2=mykonva.create_circle({
+        radius:215/2,
+        fill:"#E6E6E6",
+        circle_father:center_group,
+    })
+
+      var c1=mykonva.create_circle({
+        radius:156/2,
+        fill:"#2A3466",
+        circle_father:center_group,
+        z_index:2,
+    })
+
+      var center_text=mykonva.create_text({
+           text_father:center_group,
+           fill:"#fff",
+           text:"WEB 全栈",
+      });
+      
+      var groupa=mykonva.create_group({
+             x:-157*Math.sin(30*Math.PI/180),
+             y:-157*Math.cos(30*Math.PI/180),
+             group_father:center_group1,
+      })
+
+      var circle_a1=mykonva.create_circle({
+              fill:"#e92322",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupa,
+      })
+
+       var circle_a2=mykonva.create_circle({
+              fill:"#e92322",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupa,
+      })
+
+        var circle_a3=mykonva.create_text({
+              fill:"#fff",
+              text:"html",
+              text_father:groupa,
+              font_size:14,
+      })
+
+         var groupb=mykonva.create_group({
+             x:-157*Math.sin(120*Math.PI/180),
+             y:-157*Math.cos(120*Math.PI/180),
+             group_father:center_group1,
+      })
+
+         var circle_b1=mykonva.create_circle({
+              fill:"green",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupb,
+      })
+
+         var circle_b2=mykonva.create_circle({
+              fill:"green",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupb,
+      })
+          var circle_b3=mykonva.create_text({
+              fill:"#fff",
+              text:"css",
+              text_father:groupb,
+              font_size:14,
+      })
+
+        var groupc=mykonva.create_group({
+             x:-157*Math.sin(210*Math.PI/180),
+             y:-157*Math.cos(210*Math.PI/180),
+             group_father:center_group1,
+      })
+
+         var circle_c1=mykonva.create_circle({
+              fill:"blue",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupc,
+      })
+
+         var circle_c2=mykonva.create_circle({
+              fill:"blue",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupc,
+      })
+          var circle_c3=mykonva.create_text({
+              fill:"#fff",
+              text:"js",
+              text_father:groupc,
+              font_size:14,
+      })
+
+
+          var groupd=mykonva.create_group({
+             x:-157*Math.sin(300*Math.PI/180),
+             y:-157*Math.cos(300*Math.PI/180),
+             group_father:center_group1,
+      })
+
+         var circle_d1=mykonva.create_circle({
+              fill:"purple",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupd,
+      })
+
+         var circle_d2=mykonva.create_circle({
+              fill:"purple",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupd,
+      })
+
+          var circle_d3=mykonva.create_text({
+              fill:"#fff",
+              text:"less",
+              text_father:groupd,
+              font_size:14,
+      })
+
+
+     var groupe=mykonva.create_group({
+             x:-260*Math.sin(72*Math.PI/180),
+             y:-260*Math.cos(72*Math.PI/180),
+             group_father:center_group2,
+      })
+
+         var circle_e1=mykonva.create_circle({
+              fill:"cyan",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupe,
+      })
+
+         var circle_e2=mykonva.create_circle({
+              fill:"cyan",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupe,
+      })
+         
+          var circle_e3=mykonva.create_text({
+              fill:"#fff",
+              text:"vue.js",
+              text_father:groupe,
+              font_size:14,
+      })
+
+
+          var groupf=mykonva.create_group({
+             x:-260*Math.sin(72*2*Math.PI/180),
+             y:-260*Math.cos(72*2*Math.PI/180),
+             group_father:center_group2,
+      })
+
+         var circle_f1=mykonva.create_circle({
+              fill:"orange",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupf,
+      })
+
+         var circle_f2=mykonva.create_circle({
+              fill:"orange",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupf,
+      })
+         
+          var circle_f3=mykonva.create_text({
+              fill:"#fff",
+              text:"webpack",
+              text_father:groupf,
+              font_size:14,
+      })
+
+      var groupg=mykonva.create_group({
+             x:-260*Math.sin(72*3*Math.PI/180),
+             y:-260*Math.cos(72*3*Math.PI/180),
+             group_father:center_group2,
+      })
+
+         var circle_g1=mykonva.create_circle({
+              fill:"purple",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupg,
+      })
+
+         var circle_g2=mykonva.create_circle({
+              fill:"purple",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupg,
+      })
+         
+          var circle_g3=mykonva.create_text({
+              fill:"#fff",
+              text:"git",
+              text_father:groupg,
+              font_size:14,
+      })
+/******************************************************************/
+    var groupe=mykonva.create_group({
+             x:-260*Math.sin(72*4*Math.PI/180),
+             y:-260*Math.cos(72*4*Math.PI/180),
+             group_father:center_group2,
+      })
+
+         var circle_e1=mykonva.create_circle({
+              fill:"yellow",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupe,
+      })
+
+         var circle_e2=mykonva.create_circle({
+              fill:"yellow",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupe,
+      })
+         
+          var circle_e3=mykonva.create_text({
+              fill:"#fff",
+              text:"node.js",
+              text_father:groupe,
+              font_size:14,
+      })
+/******************************************************************/
+           var groupe=mykonva.create_group({
+             x:-260*Math.sin(72*5*Math.PI/180),
+             y:-260*Math.cos(72*5*Math.PI/180),
+             group_father:center_group2,
+      })
+
+         var circle_e1=mykonva.create_circle({
+              fill:"red",
+              radius:62/2,
+              opacity:0.8,
+              circle_father:groupe,
+      })
+
+         var circle_e2=mykonva.create_circle({
+              fill:"red",
+              radius:80/2,
+              opacity:0.25,
+              circle_father:groupe,
+      })
+         
+          var circle_e3=mykonva.create_text({
+              fill:"#fff",
+              text:"es6",
+              text_father:groupe,
+              font_size:14,
+      })
+          /*********************************************************/
+          var deg=90;
+          var animate=new Konva.Animation(function(e){
+              var angel=deg/1000*e.timeDiff;
+              center_group1.rotate(-angel);
+              center_group1.getChildren().each(function(index, el) {
+                   index.rotate(angel);
+              });
+              center_group2.rotate(angel);
+               center_group2.getChildren().each(function(index, el) {
+                   index.rotate(-angel);
+              });
+
+          },mykonva.layer)
+          animate.start();
+
+          mykonva.layer.on('mouseenter', function(event) {
+             deg=10;
+          });
+
+          mykonva.layer.on('mouseleave', function(event) {
+             deg=90;
+          });
+
+
+
+
+   mykonva.layer.draw();
+</script>
